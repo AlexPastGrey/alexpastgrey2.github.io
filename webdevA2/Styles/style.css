@@ -1,0 +1,271 @@
+/* Background code */
+    @font-face {
+        font-family: heathersfont;
+        src: url(../font/Heathers.ttf);
+    }
+
+    body{
+        background-position: center;
+        background-color: #d5fdfd;
+        background-repeat: repeat;
+        size: 100%;
+        background-size: cover;
+        background-image: url("../images/background.jpg");
+        color: rgb(255, 255, 255);
+        margin: 3% 3% 5%;
+    }
+
+    header{
+        transition: 0.5s;
+        padding: 0.01% 1% 1%;
+        background-color: #746094;
+        opacity: 70%;
+        background-size: cover;
+        background-image: url("../images/hamiltontexture.jpg");
+    }
+
+    #quiz{
+        margin: 1%;
+        color:black;
+    }
+
+    .container {
+        div {
+            width: 100%;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button {
+        width: 30%;
+        height: 30%;
+        transition: 0.5s;
+        margin: 1%;
+        background-color: #04AA6D; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .button:hover {
+        transition: 0.5s;
+        padding: 20px 20px;
+    }
+    
+    #page1btn {
+        background: #40a533;
+    }
+    #page1btn:hover {
+        background: #1e6d25;
+    }
+    
+    #page2btn {
+        background: #c90f2e;
+    }
+    #page2btn:hover {
+        background: #810000;
+    }
+    
+    #page3btn {
+        color: black;
+        background: #c99c0f;
+    }
+    #page3btn:hover {
+        color: white;
+        background: #816100;
+    }
+    #musicplayer {
+        background:#007a2f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #musicplayer:hover {
+        background:#00aa00;
+    }
+
+    #musicplayer {
+        width: 100px;
+    }
+
+    @media (max-width:768px)
+    {
+        .button {
+            width: 100%;
+        }
+        #musicplayer {
+            width: 100%;
+        }
+    }
+    
+    
+    /* Code for centralising h1 code in the top table */
+        header h1{
+            transition: 0.5s;
+            padding: 0%;
+            background-color: #ffffff;
+            color: rgb(189, 0, 0);
+            text-align: center;
+            font-style: bold;
+            font-size: 150%;
+            font-family: 'heathersfont', 'Wingdings', Arial, sans-serif;
+            opacity: 0%;
+        }
+
+        @media (max-width:768px){
+            header {
+                opacity: 95%;
+            }
+            header h1{
+                color: blue;
+            }
+        }
+    
+    /* Code for handling what happens when you hover over the top bar */
+        header:hover {
+            opacity: 95%;
+            transition: 0.5s;
+            header h1{
+                opacity: 100%;
+            }
+        }
+
+        header:hover h1{
+            transition: 0.5s;
+            opacity: 95%;
+            font-size: 300%;
+        }
+
+/* General styling for contentcards */
+    .contentcard {
+        border-radius: 12px;
+        margin: 1%;
+        background-color: #ffffff;
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contentcard h1{
+        text-align: center;
+        display: block;
+        padding: 2%;
+        background-color: #e5ecff;
+        font-style: italic;
+        font-size: 150%;
+        margin: 20px auto;
+        width: 80%;
+        color: black;
+    }
+    .contentcard p{
+        color:rgb(0, 0, 0);
+        font-size: 100%;
+        padding: 2% 4%;
+        margin: 0px 20px 5px;
+    }
+
+    #page2{
+        p{
+            padding: 0% 4%;
+        }
+    }
+
+    #page3{
+        background-size: cover;
+        background-image: url("../images/hamiltontexture.jpg");
+    }
+
+/* General styling for images */
+    img {
+        transition: 0.5s;
+        padding: 0% 3% 2%;
+        width: 20%;
+    }
+
+/* General styling for how page content looks */
+    .pagecontent {
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+/* List styling */
+    ul {
+        margin: 0% 3% 5%;
+    }
+
+    li {
+        display:inline;
+    }
+
+    @media (max-width:768px)
+    {
+        li {
+        margin: 1% 5%;
+            display:block;
+        }
+    }
+
+/*quiz styling*/
+
+#quiz {
+    margin: -2% 5%;
+}
+
+.quizbuttoncontainer {
+    margin: 2% 3%;
+}
+
+.quizbuttons {
+    margin: 0% 1%;
+}
+
+/* Matching game styling */
+
+.card {
+    width: 100px;
+    height: 60px;
+    background-color: #000000;
+    border: 2px solid #dddddd;
+    border-radius: 4px;
+    margin: 1% 1% 1% 20%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card div {
+    text-align: center;
+}
+
+#matchgrid {
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 2px solid #dddddd;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1% 5%;
+    width: 35%;
+}
+
+#matchgrid > div:nth-child(2n+1)
+{
+    margin: 1% 20% 1% 1%;
+}
+
+.matched {
+    opacity: 0.5;
+    cursor: auto;
+}
