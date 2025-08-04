@@ -24,6 +24,7 @@
     }
 
     footer {
+        display: flex;;
         margin: 2%;
         position: fixed;
         bottom: 0px;
@@ -32,6 +33,18 @@
         background-color: #776161;
         opacity: 100%;
         text-align: center;
+    }
+
+    #qrCodeImg {
+        display: inline;
+        width: 60px;
+        height: 60px;
+    }
+
+    @media (max-width:800px){ /*at mobile size*/
+        #qrCodeImg{
+            display:none;
+        }
     }
 
     #quiz{
