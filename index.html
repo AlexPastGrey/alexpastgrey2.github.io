@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 2 Webdev</title>
+        <link rel="stylesheet" href="Styles/style.css">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>
+                Musical Theatre!
+            </h1>
+        </header>
+
+        <nav class="container"> <!--menu system-->
+         
+            <div id="listdiv">
+                <ul>
+                    <li>
+                        <button class="button" id="page1btn">
+                            The origins of contemporary Musical Theatre
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="button" id="page2btn">
+                            What defines "Musical Theatre" as a genre?
+                        </button>
+                    </li>
+                    
+                    <li>
+                        <button class="button" id="page3btn">
+                            How do you tell story through music?
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+
+        </nav>
+
+        <main class="pagecontent" id="educontent">
+            <div class="contentcard" id="page1">
+                <h1>
+                    The origins of contemporary Musical Theatre
+                </h1>
+                <p>
+                Although story through music as a concept has been around since ancient times, the idea of contemporary musical theatre only came about around the 19th century, with many structural elements established by the light opera works of Jacques Offenbach in France, Gilbert and Sullivan in Britain and the works of Harrigan and Hart in America. These were followed by Edwardian musical comedies, which emerged in Britain, and the musical theatre works of American creators like George M. Cohan at the turn of the 20th century. 
+                </p>
+                <img src="images/jacque.jpg" alt="Jacques Offenbach" id="jacqueimage">
+                <img src="images/gilbertandsullivan.jpg" alt="Gilbert and Sullivan" id="gilbertandsullivanimage">
+            </div>
+
+            <div class="contentcard" id="page2">
+                <h1>
+                    What defines "Musical Theatre" as a genre?
+                </h1>
+                <p>
+                    Overall, musical theatre is not exactly a genre, so my title is a little bit clickbait - Musical theatre songs are generally distinct because they prioritise storytelling and serving narrative purpose. Usually, a musical theatre song (or showtune) is developed to enhance moments in the musical&#8217;s story. Musicals can exist wherein the songs were pre-existent, though they are known as Jukebox Musicals due to their lack of original music pieces.
+                    <button class="button" id="musicplayer">
+                        Play music
+                    </button>
+                    <br>
+                </p>
+                <div id="quiz"></div>
+                <br>
+                <div class="quizbuttoncontainer">
+                    <button class="quizbuttons" id="submit">
+                        Submit
+                    </button>
+                    <button class="quizbuttons" id="reload">
+                        Reload
+                    </button>
+                    <br>
+                </div>
+
+            </div>
+
+            <div class="contentcard" id="page3">
+                <h1>
+                    How do you tell story through music?
+                </h1>
+
+                <p>
+                    Telling stories through music is actually quite simple, as it is exactly what it says on the tin. Basically, to tell story through music, you must treat the musical score itself like another language that the story is being told through. As a writer, when you write songs, you need to use them to punctuate things such as character moments (e.g. The Room Where It Happens (Hamilton), Disappear (Dear Evan Hansen), etc) and/or specific important points in the narrative (e.g. Storm (Epic The Musical), Candy Store (Heathers), etc.). The song must be carefully written to be relevant to the plot without just being a blank description of what the characters are doing or thinking or saying. A balance must be struck between musical structure and screenwriting.
+                    <div id='matchgrid'></div>
+                </p>
+                
+            </div>
+        </main>
+
+        <footer>
+            Lab02, Goh Yong Hong Ansel, 240390Z
+        </footer>
+    </body>
+</html>
